@@ -1,0 +1,29 @@
+package br.senac.rj.empresa.modelo;
+
+public class Funcionario {
+	public int registro;
+	public String nome;
+	public int cargo;
+	public double salario;
+
+	public double aplicarBonificacao(double salario) {
+		double novoSalario;
+		double bonificacao;
+		switch (cargo) {
+		case 1:
+			bonificacao = salario * 0.2;
+			novoSalario = salario + bonificacao;
+			return novoSalario;
+		case 2:
+			bonificacao = salario * 0.4;
+			novoSalario = salario + bonificacao;
+			return novoSalario;
+		case 3:
+			bonificacao = salario * 0.6;
+			novoSalario = salario + bonificacao;
+			return novoSalario;
+		default:
+			return salario;
+		}
+	}
+}

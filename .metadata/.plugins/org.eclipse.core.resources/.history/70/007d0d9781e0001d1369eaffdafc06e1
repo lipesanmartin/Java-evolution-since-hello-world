@@ -1,0 +1,16 @@
+
+public class TesteDoWhile2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int numero = 7;
+		int a = 1;
+		do {
+			int tabuada = numero * a;
+			System.out.println(tabuada);
+			a++;
+		} while (a <= 10);
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package br.senac.rj.empresa.teste;
+
+import br.senac.rj.empresa.modelo.Funcionario;
+
+public class TesteFuncionario1 {
+
+	public static void main(String[] args) {
+		Funcionario func1 = new Funcionario();
+		func1.registro = 2;
+		func1.nome = "Felipe";
+		func1.cargo = 4;
+		func1.salario = 1000;
+		double novoSalario = func1.aplicarBonificacao(func1.salario);
+		System.out.println("Atributos:");
+		System.out.println("Registro: " + func1.registro);
+		System.out.println("Nome: " + func1.nome);
+		System.out.println("Cargo: " + func1.cargo);
+		System.out.println("Salario: R$" + func1.salario);
+		System.out.println("De acordo com seu cargo, a bonificação será R$" + (novoSalario - func1.salario));
+		System.out.println("Salario com bonificação: R$" + novoSalario);
+	}
+
+}
