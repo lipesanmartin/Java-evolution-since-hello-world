@@ -5,7 +5,7 @@ public class Funcionario {
 	private String nome;
 	private int cargo;
 	private double salario;
-	
+
 	public int getRegistro() {
 		return registro;
 	}
@@ -40,19 +40,15 @@ public class Funcionario {
 
 	public double aplicarBonificacao(double salario) {
 		double novoSalario;
-		double bonificacao;
 		switch (cargo) {
 		case 1:
-			bonificacao = this.salario * 0.2;
-			novoSalario = this.salario + bonificacao;
+			novoSalario = this.salario * 1.2;
 			return novoSalario;
 		case 2:
-			bonificacao = this.salario * 0.4;
-			novoSalario = this.salario + bonificacao;
+			novoSalario = this.salario * 1.4;
 			return novoSalario;
 		case 3:
-			bonificacao = this.salario * 0.6;
-			novoSalario = this.salario + bonificacao;
+			novoSalario = this.salario * 1.6;
 			return novoSalario;
 		default:
 			return this.salario;

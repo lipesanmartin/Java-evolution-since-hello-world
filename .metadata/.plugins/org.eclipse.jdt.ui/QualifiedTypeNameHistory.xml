@@ -3,4 +3,5 @@
     <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="br.senac.rj.teste.ContaCorrenteEspecial"/>
 </qualifiedTypeNameHistroy>
